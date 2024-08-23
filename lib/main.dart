@@ -41,20 +41,64 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     var b1 = MaterialButton(
-      onPressed: (){},
-      child: Text("Lapin"),
+      onPressed: (){
+        if(this._indexLapin == 0){
+          this._pafs++;
+          this._indexLapin = Random().nextInt(4);
+        }else{
+          this._flaps++;
+          this._indexLapin = Random().nextInt(4);
+        }
+        setState(() {
+
+        });
+      },
+      child: Text(this._indexLapin == 0 ? "Lapin": "Taupe"),
     );
     var b2 = MaterialButton(
-      onPressed: (){},
-      child: Text("Taupe"),
+      onPressed: (){
+        if(this._indexLapin == 1){
+          this._pafs++;
+          this._indexLapin = Random().nextInt(4);
+        }else{
+          this._flaps++;
+          this._indexLapin = Random().nextInt(4);
+        }
+        setState(() {
+
+        });
+      },
+      child: Text(this._indexLapin == 1 ? "Lapin": "Taupe"),
     );
     var b3 = MaterialButton(
-      onPressed: (){},
-      child: Text("Taupe"),
+      onPressed: (){
+        if(this._indexLapin == 2){
+          this._pafs++;
+          this._indexLapin = Random().nextInt(4);
+        }else{
+          this._flaps++;
+          this._indexLapin = Random().nextInt(4);
+        }
+        setState(() {
+
+        });
+      },
+      child: Text(this._indexLapin == 2 ? "Lapin": "Taupe"),
     );
     var b4 = MaterialButton(
-      onPressed: (){},
-      child: Text("Taupe"),
+      onPressed: (){
+        if(this._indexLapin == 3){
+          this._pafs++;
+          this._indexLapin = Random().nextInt(4);
+        }else{
+          this._flaps++;
+          this._indexLapin = Random().nextInt(4);
+        }
+        setState(() {
+
+        });
+      },
+      child: Text(this._indexLapin == 3 ? "Lapin": "Taupe"),
     );
     return Scaffold(
       appBar: AppBar(
